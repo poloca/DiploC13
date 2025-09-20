@@ -6,7 +6,7 @@ from sklearn.tree import DecisionTreeClassifier
 
 
 st.write(''' # Predicción de sobrevivientes del Titanic ''')
-st.image("/content/billete-titanic.jpg", caption="El Titanic navegaba desde Southampton, Inglaterra, hasta Nueva York en Estados Unidos.")
+st.image("billete-titanic.jpg", caption="El Titanic navegaba desde Southampton, Inglaterra, hasta Nueva York en Estados Unidos.")
 
 st.header('Datos de evaluación')
 
@@ -34,7 +34,7 @@ def user_input_features():
 
 df = user_input_features()
 
-titanic =  pd.read_csv('/content/Titanic2.csv', encoding='latin-1')
+titanic =  pd.read_csv('Titanic2.csv', encoding='latin-1')
 X = titanic.drop(columns='Survived')
 Y = titanic['Survived']
 
